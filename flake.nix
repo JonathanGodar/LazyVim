@@ -15,6 +15,12 @@
       buildInputs = with pkgs; [
         lua-language-server
         nil
+        pyright
+        bash-language-server
+        nushell
+        matlab-language-server
+        jdt-language-server
+        svelte-language-server
       ];
     };
   };
