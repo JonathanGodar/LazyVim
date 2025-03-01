@@ -17,13 +17,21 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [
           lua-language-server
+
+          # Nix
           nil
+          nixfmt-rfc-style
+
+          # Python
           pyright
+          ruff
+
+          # Shells
           bash-language-server
           nushell
+
           matlab-language-server
           jdt-language-server
-          nixfmt-rfc-style
         ];
       };
     };
