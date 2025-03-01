@@ -1,4 +1,7 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+
+## Running test just to test
+```bash
+(NVIM_APPNAME=lazy-nvim nvim -u ~/.config/lazy-nvim/init.lua ~/programming/bittan/)
+```
