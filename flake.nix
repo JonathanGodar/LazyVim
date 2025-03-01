@@ -36,7 +36,7 @@
       luaConfig = ./.;
 
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = self.required_packages;
+        buildInputs = self.requiredPackages;
       };
     };
 }
