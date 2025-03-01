@@ -16,6 +16,7 @@
     {
       requiredPackages = with pkgs; [
         lua-language-server
+        stylua
 
         # Nix
         nil
@@ -31,6 +32,9 @@
 
         matlab-language-server
         jdt-language-server
+
+        shfmt
+        nodePackages.prettier
       ];
 
       luaConfig = ./.;
