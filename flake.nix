@@ -14,7 +14,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      required_packages = with pkgs; [
+      requiredPackages = with pkgs; [
         lua-language-server
 
         # Nix
