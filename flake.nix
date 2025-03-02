@@ -35,6 +35,8 @@
 
         shfmt
         nodePackages.prettier
+
+        rust-analyzer
       ];
 
       luaConfig = ./.;
