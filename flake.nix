@@ -37,6 +37,9 @@
         nodePackages.prettier
 
         rust-analyzer
+        tinymist
+
+        gcc
       ];
 
       luaConfig = ./.;
