@@ -11,13 +11,16 @@ return {
       "DiffviewToggleFiles",
     },
     keys = {
-      "<leader>gd",
-      "DiffviewOpen",
-      -- function()
-      --   require("").open({ "diff" })
-      -- end,
-      "i",
-      desc = "Git diff",
+      {
+        "<leader>gd",
+        "<Cmd>DiffviewOpen<CR>",
+        desc = "Git diff",
+      },
+      {
+        "<leader>gf",
+        "<Cmd>DiffviewFileHistory<CR>",
+        desc = "Git file history",
+      },
     },
 
     -- keys = {

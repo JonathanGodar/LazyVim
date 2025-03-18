@@ -20,7 +20,7 @@ return {
           require("neogit").open({ "log" })
         end,
         "i",
-        desc = "Git diff",
+        desc = "Git log",
       },
       {
         "<leader>gD",
@@ -31,7 +31,14 @@ return {
         desc = "Git diff (advanced)",
       },
       {
-        "<leader>gn",
+        "<leader>gc",
+        function()
+          require("neogit").open({ "commit" })
+        end,
+        desc = "Commit",
+      },
+      {
+        "<leader>gg",
         function()
           require("neogit").open()
         end,
