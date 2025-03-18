@@ -1,6 +1,5 @@
 return {
   {
-
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim", -- required
@@ -10,6 +9,40 @@ return {
       "ibhagwan/fzf-lua", -- optional
       -- "nvim-telescope/telescope.nvim", -- optional
       -- "echasnovski/mini.pick", -- optional
+    },
+    opts = {
+      graph_style = "kitty",
+    },
+    keys = {
+      {
+        "<leader>gl",
+        function()
+          require("neogit").open({ "log" })
+        end,
+        "i",
+        desc = "Git diff",
+      },
+      {
+        "<leader>gD",
+        function()
+          require("neogit").open({ "diff" })
+        end,
+        "i",
+        desc = "Git diff (advanced)",
+      },
+      {
+        "<leader>gn",
+        function()
+          require("neogit").open()
+        end,
+        "i",
+        desc = "Open neogit",
+      },
+    },
+    cmd = {
+      "Neogit",
+      "NeogitLogCurrent",
+      "NeogitResetState",
     },
     config = true,
   },
