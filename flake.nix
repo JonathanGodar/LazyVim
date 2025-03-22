@@ -39,6 +39,12 @@
         rust-analyzer
         tinymist
 
+        # Markdown
+        markdownlint-cli2
+        marksman
+
+        zk
+
         gcc
       ];
 
