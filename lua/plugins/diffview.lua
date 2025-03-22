@@ -22,9 +22,5 @@ return {
         desc = "Git file history",
       },
     },
-
-    -- keys = {
-    --   ''
-    -- },
   },
 }
