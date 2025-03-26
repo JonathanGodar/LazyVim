@@ -46,6 +46,10 @@
         zk
 
         gcc
+
+        # For tinymist
+        websocat
+        tinymist
       ];
 
       luaConfig = ./.;

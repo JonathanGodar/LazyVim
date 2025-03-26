@@ -3,7 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        tinymist = {}
+        tinymist = {},
       },
     },
   },
@@ -11,14 +11,21 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "typst"
+        "typst",
       },
-    }
+    },
   },
   {
     "chomosuke/typst-preview.nvim",
-    ft = "typst",
-    opts = {}
-
+    -- ft = "typst",
+    opts = {
+      open_cmd = "firefox %s -P typst-preview --class typst-preview",
+      debug = true,
+      -- port = 56025,
+      dependencies_bin = {
+        ["tinymist"] = "tinymist",
+        ["websocat"] = "websocat",
+      },
+    },
   },
 }
