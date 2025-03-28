@@ -17,7 +17,13 @@ return {
   },
   {
     "chomosuke/typst-preview.nvim",
-    -- ft = "typst",
+    ft = "typst",
+
+    keys = {
+      { "<leader>tp", "<cmd>TypstPreview<cr>", desc = "Start typst preview", ft = "typst" },
+      { "<leader>ts", "<cmd>TypstPreviewSyncCursor<cr>", desc = "Sync typst preview cursor", ft = "typst" },
+    },
+
     opts = {
       open_cmd = "firefox %s -P typst-preview --class typst-preview",
       debug = true,
