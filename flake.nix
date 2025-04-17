@@ -36,6 +36,9 @@
         shfmt
         nodePackages.prettier
 
+        # Typescript + javascript
+        vtsls
+
         rust-analyzer
         tinymist
 
