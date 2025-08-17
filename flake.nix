@@ -40,6 +40,7 @@
         vtsls
 
         rust-analyzer
+        rustfmt
         tinymist
 
         # Markdown
