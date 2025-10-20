@@ -54,6 +54,10 @@
         # For tinymist
         websocat
         tinymist
+
+        # Required runtimes
+        nodejs
+        tree-sitter
       ];
 
       luaConfig = ./.;

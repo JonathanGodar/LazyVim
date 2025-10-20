@@ -25,7 +25,7 @@ return {
     },
 
     opts = {
-      open_cmd = "firefox %s -P typst-preview --class typst-preview",
+      open_cmd = "firefox %s --class typst-preview",
       debug = true,
       -- port = 56025,
       dependencies_bin = {
