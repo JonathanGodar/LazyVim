@@ -49,7 +49,9 @@
 
         zk
 
+        # C/C++
         gcc
+        libclang
 
         # For tinymist
         websocat

@@ -2,7 +2,6 @@
 -- stylua: ignore
 if true then return {} end
 
-
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
 -- In your plugin files, you can:
@@ -13,8 +12,8 @@ return {
   -- add gruvbox
   -- { "ellisonleao/gruvbox.nvim" },
 
-  { "williamboman/mason.nvim", enabled = false, },
-  { "williamboman/mason-lspconfig.nvim", enabled = false, },
+  { "williamboman/mason.nvim", enabled = false },
+  { "williamboman/mason-lspconfig.nvim", enabled = false },
 
   -- Configure LazyVim to load gruvbox
   {
@@ -187,15 +186,15 @@ return {
   { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add any tools you want to have installed below
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     ensure_installed = {
+  --       "stylua",
+  --       "shellcheck",
+  --       "shfmt",
+  --       "flake8",
+  --     },
+  --   },
+  -- },
 }
