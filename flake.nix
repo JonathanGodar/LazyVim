@@ -20,7 +20,7 @@
 
         # Nix
         nil
-        nixfmt-rfc-style
+        nixfmt
 
         # Python
         pyright
